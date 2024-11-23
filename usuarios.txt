@@ -1,0 +1,5 @@
+João,09373763962,joao@gmail.com,123,2005-11-14,admin
+Alexandre,03214567845,alexandre@gmail.com,123,2005-11-22,cliente
+Eduardo,02135487545,edu@gmail.com,123,2004-11-16,cliente
+Leonardo,45632587412,leo@gmail.com,123,2003-11-12,cliente
+JoãoV,03214565236,jaoo@gmail.com,123,2004-11-23,cliente

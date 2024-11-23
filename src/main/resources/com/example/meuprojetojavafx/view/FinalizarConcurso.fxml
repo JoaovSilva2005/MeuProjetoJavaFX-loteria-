@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.ListView?> <!-- Importar ListView -->
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.meuprojetojavafx.controller.FinalizarConcursoController" hgap="10" vgap="10" alignment="CENTER">
+    <!-- Colunas -->
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS"/>
+    </columnConstraints>
+
+    <!-- Linhas -->
+    <rowConstraints>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+    </rowConstraints>
+
+    <!-- Texto de Instrução -->
+    <Label text="Finalizar Concurso" fx:id="labelFinalizarConcurso" style="-fx-font-size: 18px; -fx-font-weight: bold;" GridPane.rowIndex="0" GridPane.columnIndex="0" />
+
+    <!-- ComboBox para escolher o concurso -->
+    <ComboBox fx:id="comboBoxConcursos" promptText="Selecione um Concurso" GridPane.rowIndex="1" GridPane.columnIndex="0" />
+
+    <!-- Gerar números manualmente -->
+    <CheckBox text="Gerar números manualmente" fx:id="checkBoxManual" GridPane.rowIndex="2" GridPane.columnIndex="0" />
+
+    <!-- ListView para exibir concursos -->
+    <ListView fx:id="listViewConcursos" GridPane.rowIndex="3" GridPane.columnIndex="0" />
+
+    <!-- Botões -->
+    <Button text="Gerar Números Automaticamente" fx:id="btnGerarAutomatico" onAction="#gerarSorteioAutomatico" GridPane.rowIndex="4" GridPane.columnIndex="0" maxWidth="200" style="-fx-font-size: 16px; -fx-background-color: #3498db; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px; -fx-pref-width: 200px;" />
+
+    <Button text="Salvar Sorteio" fx:id="btnSalvarSorteio" onAction="#salvarSorteio" GridPane.rowIndex="5" GridPane.columnIndex="0" maxWidth="200" style="-fx-font-size: 16px; -fx-background-color: #2ecc71; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px; -fx-pref-width: 200px;" />
+
+    <Button text="Voltar" fx:id="btnCancelar" onAction="#voltarParaTelaPrincipal" GridPane.rowIndex="6" GridPane.columnIndex="0" maxWidth="200" style="-fx-font-size: 16px; -fx-background-color: #e74c3c; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px; -fx-pref-width: 200px;" />
+</GridPane>

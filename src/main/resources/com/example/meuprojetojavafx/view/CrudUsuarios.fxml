@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.meuprojetojavafx.controller.CrudUsuarioController">
+    <TableView fx:id="tableViewUsuarios" layoutX="14.0" layoutY="14.0" prefHeight="250.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="columnUsuario" text="Usuário" prefWidth="120" />
+            <TableColumn fx:id="columnCpf" text="CPF" prefWidth="120" />
+            <TableColumn fx:id="columnEmail" text="E-mail" prefWidth="120" />
+            <TableColumn fx:id="columnDataNascimento" text="Data Nascimento" prefWidth="120" />
+        </columns>
+    </TableView>
+
+    <TextField fx:id="campoUsuario" promptText="Nome de usuário" layoutX="14.0" layoutY="280.0" prefWidth="200.0" />
+    <TextField fx:id="campoCpf" promptText="CPF" layoutX="220.0" layoutY="280.0" prefWidth="200.0" />
+    <TextField fx:id="campoEmail" promptText="E-mail" layoutX="14.0" layoutY="320.0" prefWidth="200.0" />
+    <PasswordField fx:id="campoSenha" promptText="Senha" layoutX="220.0" layoutY="320.0" prefWidth="200.0" />
+    <DatePicker fx:id="campoDataNascimento" layoutX="14.0" layoutY="360.0" />
+
+    <Button fx:id="botaoAdicionar" text="Adicionar" layoutX="14.0" layoutY="400.0" onAction="#adicionarUsuario" />
+    <Button fx:id="botaoEditar" text="Editar" layoutX="120.0" layoutY="400.0" onAction="#editarUsuario" />
+    <Button fx:id="botaoExcluir" text="Excluir" layoutX="226.0" layoutY="400.0" onAction="#excluirUsuario" />
+</AnchorPane>

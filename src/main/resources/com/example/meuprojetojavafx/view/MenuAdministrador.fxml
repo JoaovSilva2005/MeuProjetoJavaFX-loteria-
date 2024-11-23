@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.control.Label?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.meuprojetojavafx.controller.MenuAdministradorController" hgap="20" vgap="20" alignment="CENTER" style="-fx-background-color: #f4f4f4; -fx-padding: 20px;">
+
+    <!-- Colunas -->
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS"/>
+    </columnConstraints>
+
+    <!-- Linhas -->
+    <rowConstraints>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+    </rowConstraints>
+
+    <!-- Título -->
+    <Label text="Menu do Administrador" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50; -fx-padding: 20px; -fx-alignment: center;" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+    <!-- Botão Cadastrar Concurso -->
+    <Button text="Cadastrar Concurso" fx:id="btnCadastrarConcurso" onAction="#abrirTelaCadastrarConcurso" GridPane.rowIndex="1" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #3498db; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão Finalizar Concurso -->
+    <Button text="Finalizar Concurso" fx:id="btnFinalizarConcurso" onAction="#finalizarConcurso" GridPane.rowIndex="2" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #2ecc71; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão Exibir Resultados -->
+    <Button text="Exibir Resultados" fx:id="btnExibirResultados" onAction="#abrirTelaExibirResultados" GridPane.rowIndex="3" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #f39c12; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão Visualizar Resultados -->
+    <Button text="Visualizar Resultados" fx:id="btnVisualizarResultados" onAction="#abrirTelaVisualizarResultados" GridPane.rowIndex="4" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #e67e22; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão Verificar Acúmulo -->
+    <Button text="Verificar Acúmulo do Concurso" fx:id="btnVerificarAcumulo" onAction="#abrirTelaVerificarAcumulo" GridPane.rowIndex="5" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #9b59b6; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão CRUD Usuários -->
+    <Button text="CRUD Usuários" fx:id="btnCrudUsuarios" onAction="#abrirTelaCrudUsuarios" GridPane.rowIndex="6" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #1abc9c; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão CRUD Concurso -->
+    <Button text="CRUD Concurso" fx:id="btnCrudConcurso" onAction="#abrirTelaCrudConcurso" GridPane.rowIndex="7" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #34495e; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão CRUD Aposta -->
+    <Button text="CRUD Aposta" fx:id="btnCrudAposta" onAction="#abrirTelaCrudAposta" GridPane.rowIndex="8" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #e74c3c; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão Logout -->
+    <Button text="Logout" fx:id="btnLogout" onAction="#logout" GridPane.rowIndex="9" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #e74c3c; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+</GridPane>

@@ -1,0 +1,55 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.control.Label?>
+<GridPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.meuprojetojavafx.controller.MainMenuController" hgap="20" vgap="20" alignment="CENTER" style="-fx-background-color: #f4f4f4; -fx-padding: 20px;">
+
+    <!-- Colunas -->
+    <columnConstraints>
+        <ColumnConstraints halignment="CENTER" hgrow="ALWAYS"/>
+    </columnConstraints>
+
+    <!-- Linhas -->
+    <rowConstraints>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+        <RowConstraints valignment="CENTER" vgrow="ALWAYS"/>
+    </rowConstraints>
+
+    <!-- Título -->
+    <Label text="Menu do Usuário" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50; -fx-padding: 20px; -fx-alignment: center;" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+
+    <!-- Botão Realizar Aposta -->
+    <Button text="Realizar Aposta" fx:id="btnRealizarAposta" onAction="#abrirTelaRealizarAposta" GridPane.rowIndex="1" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #3498db; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão Minhas Apostas -->
+    <Button text="Minhas Apostas" fx:id="btnVisualizarApostas" onAction="#abrirTelaVisualizarApostas" GridPane.rowIndex="2" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #2ecc71; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão Visualizar Resultados -->
+    <Button text="Visualizar Resultados" fx:id="btnVisualizarResultados" onAction="#abrirTelaVisualizarResultados" GridPane.rowIndex="3" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #e67e22; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+    <!-- Botão Sair -->
+    <Button text="Sair" fx:id="btnSair" onAction="#sair" GridPane.rowIndex="4" GridPane.columnIndex="0" maxWidth="250" style="-fx-font-size: 16px; -fx-background-color: #e74c3c; -fx-text-fill: white; -fx-border-radius: 20px; -fx-padding: 10px;" alignment="CENTER">
+        <effect>
+            <DropShadow radius="10" offsetX="5" offsetY="5" color="#7f8c8d" />
+        </effect>
+    </Button>
+
+</GridPane>

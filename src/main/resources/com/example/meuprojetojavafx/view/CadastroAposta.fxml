@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/17.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.meuprojetojavafx.controller.CadastroApostaController">
+    <Label text="Cadastro de Aposta" style="-fx-font-size: 18px;" />
+
+    <Label text="Selecione o Concurso:" />
+    <ComboBox fx:id="comboBoxConcurso" prefWidth="200.0" />
+
+    <Label text="Selecione os Números da Aposta:" />
+    <GridPane fx:id="gridPaneNumeros" hgap="10" vgap="10" />
+
+    <HBox alignment="CENTER" spacing="10">
+        <Label fx:id="labelQuantidadeNumeros" text="Números Selecionados: 0" />
+        <Label fx:id="labelValorAposta" text="Valor da Aposta: R$ 0,00" />
+    </HBox>
+
+    <Button text="Gerar Aposta Aleatória" onAction="#gerarApostaAleatoria" />
+    <Button text="Salvar Aposta" onAction="#salvarAposta" />
+    <Button text="Voltar" onAction="#voltarParaTelaPrincipal" />
+</VBox>

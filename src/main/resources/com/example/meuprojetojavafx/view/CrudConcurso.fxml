@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.meuprojetojavafx.controller.CrudConcursoController">
+    <!-- Topo -->
+    <top>
+        <Label text="Gerenciamento de Concursos" style="-fx-font-size: 20px; -fx-font-weight: bold;"/>
+    </top>
+
+    <!-- Centro -->
+    <center>
+        <TableView fx:id="tableViewConcursos" prefHeight="300.0" prefWidth="500.0">
+            <columns>
+                <TableColumn fx:id="columnNome" text="Nome do Concurso" prefWidth="300.0"/>
+                <TableColumn fx:id="columnDataSorteio" text="Data do Sorteio" prefWidth="200.0"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <!-- Inferior -->
+    <bottom>
+        <VBox spacing="10.0" alignment="CENTER">
+            <padding>
+                <Insets top="10.0" right="10.0" bottom="10.0" left="10.0"/>
+            </padding>
+            <HBox spacing="10.0">
+                <Label text="Nome do Concurso:"/>
+                <TextField fx:id="campoNome" promptText="Digite o nome do concurso"/>
+            </HBox>
+            <HBox spacing="10.0">
+                <Label text="Data do Sorteio:"/>
+                <DatePicker fx:id="campoDataSorteio"/>
+            </HBox>
+            <HBox spacing="10.0">
+                <Button fx:id="botaoAdicionar" text="Adicionar Concurso" onAction="#adicionarConcurso"/>
+                <Button text="Editar Concurso" onAction="#editarConcurso"/>
+                <Button text="Excluir Concurso" onAction="#excluirConcurso"/>
+            </HBox>
+        </VBox>
+    </bottom>
+</BorderPane>
